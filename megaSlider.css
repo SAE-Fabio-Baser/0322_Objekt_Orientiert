@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#megaSlider {
+    height: 100vh;
+}
+
+.stageContainer {
+    display: flex;
+    height: 80%;
+}
+
+.prevButton, .nextButton {
+    flex-grow: 1;
+    font-size: 300%;
+    cursor: pointer;
+}
+
+.stageImage {
+    flex-grow: 8;
+}
+
+.miniaturesContainer {
+    display: flex;
+    height: 20%;
+    overflow-x: scroll;
+}
+
+.miniature {
+    transition: filter 0.3s ease-in-out;
+    position: relative;
+    filter: saturate(0);
+}
+
+.miniature.active {
+    filter: saturate(1);
+}
